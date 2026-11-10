@@ -1,0 +1,21 @@
+/* Full-width phone layout; navigation stays available without a simulated device frame. */
+.main,.nav-left,.logo-text{min-width:0}
+@media(max-width:900px){.nav-search,.nav-divider,.nav-crumb{display:none}.nav-right{gap:10px}}
+@media(max-width:700px){
+  #loginScreen{padding:20px 16px;min-height:100dvh}
+  .login-card{padding:28px 22px;width:100%;min-width:0}
+  .uline-row{grid-template-columns:minmax(0,1fr);gap:0}
+  .uline-field input,.uline-field select,#ohsWorkspace input,#ohsWorkspace textarea,#ohsWorkspace select{font-size:16px}
+  .navbar{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:0 12px;height:64px}
+  .nav-left{overflow:hidden}.logo-text .co,.logo-text .tag{white-space:nowrap}.nav-right{flex-shrink:0}
+  #userChip{padding-left:8px!important;font-size:12px!important;white-space:nowrap}
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .sidebar{padding:8px 12px;border-right:0;border-bottom:1px solid var(--line)}
+  .side-label{display:none}.side-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0}
+  .side-item{min-width:0;justify-content:center;min-height:44px;padding:8px;font-size:13px}
+  .main-inner{padding:0 16px}.meta-grid,.audit-score-row{grid-template-columns:minmax(0,1fr)}
+  #accountPanel{position:fixed!important;right:12px!important;top:68px!important;width:min(300px,calc(100vw - 24px))!important;max-height:calc(100dvh - 84px);overflow:auto}
+  #accountPanel span{overflow-wrap:anywhere;min-width:0}
+  #toastMsg{max-width:calc(100vw - 32px);width:max-content;box-sizing:border-box;white-space:normal}
+  .btn{min-height:44px}.nav-icon-btn{width:40px;height:40px}
+}
