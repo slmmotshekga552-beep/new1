@@ -16,6 +16,6 @@ export default defineConfig({
   },
 
   vite: {
-    base: "/ecompliance-portal/",
+    base: "/new1/",
   },
 });
